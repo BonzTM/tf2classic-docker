@@ -68,7 +68,15 @@ COPY --chown=TF2CLASSIC:root ./ll-tests /app/ll-tests
 
 ENV MALLOC_CHECK_=0
 
-RUN chmod +x /app/ll-tests/*.sh
+RUN chmod +x /app/ll-tests/*.sh &&`
+	/app/bin/ln -s scenefilecache_srv.so scenefilecache.so &&`
+	/app/bin/ln -s vphysics_srv.so vphysics.so &&`
+	/app/bin/ln -s studiorender_srv.so studiorender.so &&`
+	/app/bin/ln -s soundemittersystem_srv.so soundemittersystem.so &&`
+	/app/bin/ln -s shaderapiempty_srv.so shaderapiempty.so &&`
+	/app/bin/ln -s scenefilecache_srv.so scenefilecache.so &&`
+	/app/bin/ln -s replay_srv.so replay.so &&`
+	/app/bin/ln -s materialsystem_srv.so materialsystem.so &&`
 
 USER TF2CLASSIC
 
