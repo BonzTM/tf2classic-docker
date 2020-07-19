@@ -11,12 +11,12 @@ sudo apt instal libtinfo5
 
 https://steamcommunity.com/app/224260/discussions/2/1732089092441769414/
 
-app/tf2classic/bin
-ln -s scenefilecache_srv.so scenefilecache.so;
-ln -s vphysics_srv.so vphysics.so;
-ln -s studiorender_srv.so studiorender.so;
-ln -s soundemittersystem_srv.so soundemittersystem.so;
-ln -s shaderapiempty_srv.so shaderapiempty.so;
-ln -s scenefilecache_srv.so scenefilecache.so;
-ln -s replay_srv.so replay.so;
-ln -s materialsystem_srv.so materialsystem.so;
+/app/bin/
+/app/bin/ln -s scenefilecache_srv.so scenefilecache.so &&`
+/app/bin/ln -s vphysics_srv.so vphysics.so &&`
+/app/bin/ln -s studiorender_srv.so studiorender.so &&`
+/app/bin/ln -s soundemittersystem_srv.so soundemittersystem.so &&`
+/app/bin/ln -s shaderapiempty_srv.so shaderapiempty.so &&`
+/app/bin/ln -s scenefilecache_srv.so scenefilecache.so &&`
+/app/bin/ln -s replay_srv.so replay.so &&`
+/app/bin/ln -s materialsystem_srv.so materialsystem.so &&`
