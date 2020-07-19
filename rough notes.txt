@@ -1,0 +1,20 @@
+engine is  Source SDK 2013 
+
+app 244310 
+
+put togheter simlar to ge-source
+
+TF2Classic2.0.0.7zl
+
+sudo apt instal libtinfo5
+
+
+app/tf2classic/bin
+ln -s scenefilecache_srv.so scenefilecache.so;
+ln -s vphysics_srv.so vphysics.so;
+ln -s studiorender_srv.so studiorender.so;
+ln -s soundemittersystem_srv.so soundemittersystem.so;
+ln -s shaderapiempty_srv.so shaderapiempty.so;
+ln -s scenefilecache_srv.so scenefilecache.so;
+ln -s replay_srv.so replay.so;
+ln -s materialsystem_srv.so materialsystem.so;

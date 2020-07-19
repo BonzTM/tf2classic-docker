@@ -1,0 +1,58 @@
+https://iraizo.github.io/tf2-classic-linux-server-tutorial/
+TF2 Classic linux server tutorial
+05, Jul, 2020
+Prerequisites
+
+    TF2 Classic
+    A Linux server running Ubuntu
+    A SFTP/SSH client
+    Basic knowledge how linux works
+
+I will not go over how to connect to your server
+Step 1: Installing the sdk2013 server
+
+    Move the TF2 Classic .7z file where you want your server installed
+    Download the steamcmd package by running sudo apt install steamCMD.
+    Run steamcmd and after its done run login anonymous in steamcmd.
+    Run force_install_dir insert_full_path_here in steamCMD to select the directory the server install into.
+    After you did that run app_update 244310 validate in steamCMD.
+    Type exit to get out of steamCMD.
+
+Step 2: Moving files
+
+    Install p7zip by running sudo apt install p7zip-full.
+    Run 7z x insert_tf2_classic_name_here.7z to extract the folder.
+    Run mv tf2classic insert_full_path_to_server_directory_here to move the folder to your server`
+
+Step 3: Configuration
+All steps will be executed in the tf2classic folder, cd tf2classic.
+
+    Generate config(s) on cfg.tf.
+    Move them into the tf2classic/cfg folder.
+
+Step 4: Running the server
+All steps will be executed in the server folder.
+
+    Use any text editor of your choice to create runserver.sh, like nano, nano runserver.sh.
+    Input ./srcds_run -console -game tf2classic +map pl_upward +maxplayers 24 (this is a example).
+    Exit out of nano by pressing strg (ctrl) + x.
+    run chmod +x runserver.sh
+
+Step 5: Create a user
+
+    Run createuser username_here to create a user.
+    Run visudo to open the root file.
+    Insert username_here ALL=(ALL:ALL)ALL.
+    Exit out of nano by pressing strg (ctrl) + x.
+
+Step 6: Running the server
+
+    Change the user by running su - username_here.
+    Run cd full_path_to_server to go to the server folder again.
+    Run ./runserver.sh to run the server.`
+
+Issues:
+
+    I cant connect, what do i do?
+    your firewall probaly blocks the port, run ufw allow 27015, to unblock it.
+
