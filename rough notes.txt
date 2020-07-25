@@ -20,3 +20,12 @@ https://steamcommunity.com/app/224260/discussions/2/1732089092441769414/
 /app/bin/ln -s scenefilecache_srv.so scenefilecache.so &&`
 /app/bin/ln -s replay_srv.so replay.so &&`
 /app/bin/ln -s materialsystem_srv.so materialsystem.so &&`
+
+
+Arena maps broken
+
+tf2 custom maps should work if packed properly
+
+https://github.com/Scags/TF2Classic-Tools
+https://github.com/Scags/TF2C-Crash-Fixes
+
